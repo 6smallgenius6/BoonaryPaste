@@ -1,0 +1,21 @@
+/* style.css */
+
+/* body */
+body {
+  background-color: #171717;
+}
+
+/* heading */
+h1 {
+  color: white;
+  font-family: "Consolas", monospace;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* paragraph */
+p {
+  color: white;
+  font-family: "Consolas", monospace;
+  font-size: 18px;
+}
