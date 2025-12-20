@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("dtCode obtained: "+dtCode);
   
     //reset title
-    document.title = 'DTPaste - ${dtCode}';
+    document.title = ("DTPaste - "+dtCode);
   } else {
   
   }
