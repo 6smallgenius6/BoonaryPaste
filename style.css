@@ -23,8 +23,6 @@ h1 {
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* code container */
@@ -33,6 +31,7 @@ h1 {
   background-color: #303030;
   border: 2px solid white;
   border-radius: 3px;
+  display: flex;
 }
 
 #dtInput {
@@ -47,18 +46,18 @@ h1 {
 
 .state-empty #codeContainer,
 .state-invalid #codeContainer {
-  margin: auto;
+  justify-content: center;
   width: 55%;
   height: 60%;
 }
 
 .state-valid #codeContainer {
-  margin: 75%;
+  justify-content: flex-end;
   width: 20%;
   height: 50%;
 }
 
-.state-valid {
+.state-valid{
   display: flex;
 }
 

@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       setState("invalid");
     }
-    setState("state");
   
     //reset title
     document.title = ("DTPaste - "+dtCode);
