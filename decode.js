@@ -6,9 +6,13 @@ const dtCode = params.get("dt");
 
 //check logic
 if (dtCode) {
+  
   console.log("dtCode obtained: "+dtCode);
+  
+  //reset title
+  document.title = "DTPaste - ${dtCode}";
 } else {
-  console.log("No dtCode provided.");
+  
 }
 
 //methods
