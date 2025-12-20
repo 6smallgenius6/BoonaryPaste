@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
     //change state
     if (dtCode == "valid") {
-      setState(valid);
+      setState("valid");
     } else {
-      setState(invalid);
+      setState("invalid");
     }
-    setState(state);
+    setState("state");
   
     //reset title
     document.title = ("DTPaste - "+dtCode);
@@ -62,7 +62,7 @@ function showTeamInputBox() {
 	} else {
 	  
 	  //check if dream team code is provided, update inputBoxMessage
-	  if (state = "invalid") {
+	  if (state == "invalid") {
 	    inputBoxMessageDefault = "Given Dream Team code is invalid, paste Dream team code here...";
 	  }
 	}

@@ -1,6 +1,10 @@
 /* [ STYLE_CSS ] */
 
 /* body */
+html {
+  margin: 10px;
+}
+
 body {
   background-color: #171717;
   color: white;
@@ -16,8 +20,9 @@ h1 {
 
 /* [ APP DIV ] */
 #app {
-  width: fit-content;
-  height: fit-content;
+  width: 100vw;
+  height: 100vh;
+  display: :flex;
 }
 
 /* code container */
