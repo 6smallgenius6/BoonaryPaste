@@ -32,7 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
   showTeamInputBox();
 
   //listen to the box for input
-  document.getElementById("dtInput").addEventListener("input", (input) => readTeamInputBox(input));
+  const dtInputElement = document.getElementById("dtInput")
+
+  dtInputElement.addEventListener("keydown", (key) => {
+    if (key === "Enter") {
+      readTeamInputBox();
+    }
+  });
+  dtInputElement.addEventListener("blur", () => readTeamInputBox());
 });
 
 //functions
@@ -70,7 +77,10 @@ function showTeamInputBox() {
   document.getElementById("dtInput").placeholder = inputBoxMessageDefault;
 }
 
-function readTeamInputBox(input) {
+function readTeamInputBox() {
+  
+  //get input
+  const input = document.getElementById("dtInput").textContent;
   
   //log on console
   console.log(input);
