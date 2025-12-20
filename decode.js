@@ -22,15 +22,30 @@ document.addEventListener("DOMContentLoaded", () => {
   
   }
 });
-                          
+
 //functions
 function decodeTeam() {
+  
+  
+  return;
 }
 
 function showTeamInputBox() {
 
-		//string to avoid duplicity
-		const inputBoxMessageDefault = "No dream team code detected - enter dream team code here";
+	//string to avoid duplicity
+	const inputBoxMessageDefault = "No dream team code detected - enter dream team code here";
 
-		//check if team is valid or not
+	//check if team is valid or not
+	if (dtValid == true) {
+	  
+	  //Edit input box message
+	  inputBoxMessageDefault = "Enter dream team code here";
+	  
+	} else {
+	  
+	  //check if dream team code is provided, update inputBoxMessage
+	  if (dtCode) {
+	    inputBoxMessageDefault = "Invalid dream team code provided - enter dream team code here";
+	  }
+	}
 }
