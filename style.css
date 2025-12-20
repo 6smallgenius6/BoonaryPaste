@@ -52,7 +52,7 @@ h1 {
 }
 
 .state-valid #codeContainer {
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 20%;
   height: 30%;
 }
