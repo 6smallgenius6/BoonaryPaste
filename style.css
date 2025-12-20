@@ -35,7 +35,7 @@ h1 {
 
 .state-empty #codeContainer,
 .state-invalid #codeContainer {
-  margin: auto;
+  margin: 0%;
   width: 55%;
   height: 30%;
 }
