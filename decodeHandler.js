@@ -47,7 +47,7 @@ function decodeTeam() {
 function showTeamInputBox() {
 
 	//string to avoid duplicity
-	const inputBoxMessageDefault = "Insert Dream Team code here";
+	let inputBoxMessageDefault = "Insert Dream Team code here";
 
 	//check if team is valid or not
 	if (state == "valid") {
