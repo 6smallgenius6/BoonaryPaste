@@ -18,7 +18,7 @@ h1 {
 
 /* code container */
 #codeContainer {
-  padding: 16px;
+  padding: 0px;
   background-color: #303030;
   border: 2px solid white;
   border-radius: 3px;
@@ -35,14 +35,15 @@ h1 {
 
 .state-empty #codeContainer,
 .state-invalid #codeContainer {
-  margin: 0%;
+  margin: auto;
   width: 55%;
-  height: 30%;
+  height: 60%;
 }
 
 .state-valid #codeContainer {
+  margin: 75%;
   width: 20%;
-  height: 20%;
+  height: 50%;
 }
 
 .state-valid {

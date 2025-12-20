@@ -59,4 +59,7 @@ function showTeamInputBox() {
 	    inputBoxMessageDefault = "Insert valid Dream Team code here";
 	  }
 	}
+
+  //update team input default
+  document.getElementById("dtInput").placeholder = inputBoxMessageDefault;
 }
