@@ -6,9 +6,9 @@ const dtCode = params.get("dt");
 
 //check logic
 if (dtCode) {
-
+  console.log("dtCode obtained: "+dtCode);
 } else {
-
+  console.log("No dtCode provided.");
 }
 
 //methods
