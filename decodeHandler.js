@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
   	
   	setState(state);
   }
+
+  showTeamInputBox();
 });
 
 //functions
