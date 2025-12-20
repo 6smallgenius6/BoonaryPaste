@@ -1,7 +1,7 @@
 // [ DECODE_HANDLER.JS - Grab loomian paste and decode it]
 
 //consts
-const dtCode;
+const dtCode = null;
 const state = "empty";
 
 //add listener to update dynamically
