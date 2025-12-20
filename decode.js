@@ -1,18 +1,22 @@
 // [ DECODE.JS - Grab loomian paste and decode it]
 
-//const
-const params = new URLSearchParams(window.location.search);
-const dtCode = params.get("dt");
+//add listener to update dynamically
+document.addEventListener("DOMContentLoaded", () => {
+  
+  //const
+  const params = new URLSearchParams(window.location.search);
+  const dtCode = params.get("dt");
 
-//check logic
-if (dtCode) {
+  //check logic
+  if (dtCode) {
   
-  console.log("dtCode obtained: "+dtCode);
+    console.log("dtCode obtained: "+dtCode);
   
-  //reset title
-  document.title = 'DTPaste - ${dtCode}';
-} else {
+    //reset title
+    document.title = 'DTPaste - ${dtCode}';
+  } else {
   
+  }
 }
-
+                          
 //methods
