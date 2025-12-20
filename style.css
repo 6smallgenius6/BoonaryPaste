@@ -17,16 +17,26 @@ h1 {
 /* [ APP DIV ] */
 
 /* code container */
-.state-empty #inputContainer,
-.state-invalid #inputContainer {
-  margin: auto;
-  width: 600px;
-  height: 400px;
+#codeContainer {
+  padding: 16px;
+  background-color: #303030;
+  color: #A0A0A0;
+  font-family: "Consolas", monospace;
+  font-size: 15px;
+  border: 2px solid white;
+  border-radius: 3px;
 }
 
-.state-valid #inputContainer {
-  width: 300px;
-  height: 250px;
+.state-empty #codeContainer,
+.state-invalid #codeContainer {
+  margin: auto;
+  width: 55%;
+  height: 30%;
+}
+
+.state-valid #codeContainer {
+  width: 20%;
+  height: 20%;
 }
 
 .state-valid {
