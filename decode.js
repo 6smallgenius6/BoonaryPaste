@@ -1,11 +1,15 @@
 // [ DECODE.JS - Grab loomian paste and decode it]
 
+//consts
+const dtCode;
+const dtValid = false;
+
 //add listener to update dynamically
 document.addEventListener("DOMContentLoaded", () => {
   
-  //const
+  //consts
   const params = new URLSearchParams(window.location.search);
-  const dtCode = params.get("dt");
+  dtCode = params.get("dt");
 
   //check logic
   if (dtCode) {
@@ -19,4 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
                           
-//methods
+//functions
+function decodeTeam() {
+}
+
+function showTeamInputBox() {
+
+		//string to avoid duplicity
+		const inputBoxMessageDefault = "No dream team code detected - enter dream team code here";
+
+		//check if team is valid or not
+}
