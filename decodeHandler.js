@@ -1,7 +1,6 @@
 // [ DECODE_HANDLER.JS - Grab loomian paste and decode it]
 
 //consts
-const dtCode = null;
 const state = "empty";
 
 //add listener to update dynamically
@@ -9,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   //consts
   const params = new URLSearchParams(window.location.search);
-  dtCode = params.get("dt");
+  const dtCode = params.get("dt");
 
   //check logic
   if (dtCode) {
@@ -36,7 +35,7 @@ function setState(appState) {
 	app.classList.add("state-"+appState);
 }
 
-function decodeTeam() {
+function decodeTeam(dtCode) {
   
   
   return;
