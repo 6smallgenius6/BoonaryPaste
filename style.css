@@ -32,6 +32,7 @@ h1 {
 
 #app.state-valid {
   align-items: flex-end;
+  margin-right: 5%;
 }
 
 /* code container */
