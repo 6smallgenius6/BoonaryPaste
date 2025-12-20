@@ -80,8 +80,8 @@ function showTeamInputBox() {
 function readTeamInputBox() {
   
   //get input
-  const input = document.getElementById("dtInput").textContent;
-  
+  const input = document.getElementById("dtInput").value;
+
   //log on console
   console.log(input);
 }
