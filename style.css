@@ -1,8 +1,9 @@
 /* [ STYLE_CSS ] */
 
 /* body */
-html {
+html, body {
   margin: 10px;
+  overflow-x: hidden
 }
 
 body {
@@ -10,7 +11,6 @@ body {
   color: white;
   font-family: "Consolas", monospace;
   font-size: 18px;
-  margin: 10px;
 }
 
 /* heading */
@@ -22,7 +22,9 @@ h1 {
 #app {
   width: 100vw;
   height: 100vh;
-  display: :flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* code container */
