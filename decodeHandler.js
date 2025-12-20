@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
   //listen to the box for input
   const dtInputElement = document.getElementById("dtInput")
 
-  dtInputElement.addEventListener("keydown", (key) => {
-    if (key === "Enter") {
+  dtInputElement.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
       readTeamInputBox();
     }
   });
