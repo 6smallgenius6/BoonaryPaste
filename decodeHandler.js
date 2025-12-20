@@ -13,26 +13,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //check logic
   if (dtCode) {
-  
-    console.log("dtCode obtained: "+dtCode);
     
     //change state
-    state = "invalid";
+    if (dtCode == "valid") {
+      setState(valid);
+    } else {
+      setState(invalid);
+    }
     setState(state);
   
     //reset title
     document.title = ("DTPaste - "+dtCode);
   } else {
   	
-  	setState(state);
+  	setState("empty");
   }
 
+  //show appropriate box
   showTeamInputBox();
+
+  //listen to the box for input
+  document.getElementById("dtInput").addEventListener("input", (input) => readTeamInputBox(input));
 });
 
 //functions
 function setState(appState) {
 	const app = document.getElementById("app");
+  state = appState;
 	
 	app.classList.remove("state-empty", "state-invalid", "state-valid");
 	app.classList.add("state-"+appState);
@@ -47,7 +54,7 @@ function decodeTeam() {
 function showTeamInputBox() {
 
 	//string to avoid duplicity
-	let inputBoxMessageDefault = "Insert Dream Team code here";
+	let inputBoxMessageDefault = "Paste Dream Team code here...";
 
 	//check if team is valid or not
 	if (state == "valid") {
@@ -56,10 +63,16 @@ function showTeamInputBox() {
 	  
 	  //check if dream team code is provided, update inputBoxMessage
 	  if (state = "invalid") {
-	    inputBoxMessageDefault = "Insert valid Dream Team code here";
+	    inputBoxMessageDefault = "Given Dream Team code is invalid, paste Dream team code here...";
 	  }
 	}
 
   //update team input default
   document.getElementById("dtInput").placeholder = inputBoxMessageDefault;
+}
+
+function readTeamInputBox(input) {
+  
+  //log on console
+  console.log(input);
 }
