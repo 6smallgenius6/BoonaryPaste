@@ -20,11 +20,17 @@ h1 {
 #codeContainer {
   padding: 16px;
   background-color: #303030;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+#dtInput {
+  background-color: transparent;
   color: #A0A0A0;
   font-family: "Consolas", monospace;
   font-size: 15px;
-  border: 2px solid white;
-  border-radius: 3px;
+  width: 100%;
+  height: 100%;
 }
 
 .state-empty #codeContainer,
