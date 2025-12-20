@@ -32,7 +32,6 @@ h1 {
 
 #app.state-valid {
   align-items: flex-end;
-  margin-right: 5%;
 }
 
 /* code container */
@@ -42,6 +41,7 @@ h1 {
   border: 2px solid white;
   border-radius: 3px;
   display: flex;
+  margin-top: 5%;
 }
 
 #dtInput {
@@ -63,6 +63,7 @@ h1 {
 .state-valid #codeContainer {
   width: 20%;
   height: 30%;
+  margin-right: 5%;
 }
 
 .state-valid{
