@@ -1,4 +1,4 @@
-/* style.css */
+/* [ STYLE_CSS ] */
 
 /* body */
 body {
@@ -12,4 +12,33 @@ body {
 /* heading */
 h1 {
   text-align: center;
+}
+
+/* [ APP DIV ] */
+
+/* code container */
+.state-empty #inputContainer,
+.state-invalid #inputContainer {
+  margin: auto;
+  width: 600px;
+  height: 400px;
+}
+
+.state-valid #inputContainer {
+  width: 300px;
+  height: 250px;
+}
+
+.state-valid {
+  display: flex;
+}
+
+/* team container */
+#teamContainer {
+  display: none;
+}
+
+.state-valid #teamContainer{
+  display: block;
+  flex: 1;
 }

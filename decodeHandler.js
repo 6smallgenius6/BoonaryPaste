@@ -1,8 +1,8 @@
-// [ DECODE.JS - Grab loomian paste and decode it]
+// [ DECODE_HANDLER.JS - Grab loomian paste and decode it]
 
 //consts
 const dtCode;
-const dtValid = false;
+const state = "empty";
 
 //add listener to update dynamically
 document.addEventListener("DOMContentLoaded", () => {
@@ -15,15 +15,27 @@ document.addEventListener("DOMContentLoaded", () => {
   if (dtCode) {
   
     console.log("dtCode obtained: "+dtCode);
+    
+    //change state
+    state = "invalid";
+    setState(state);
   
     //reset title
     document.title = ("DTPaste - "+dtCode);
   } else {
-  
+  	
+  	setState(state);
   }
 });
 
 //functions
+function setState(appState) {
+	const app = document.getElementById("app");
+	
+	app.classList.remove("state-empty", "state-invalid", "state-valid");
+	app.classList.add("state-"+appState);
+}
+
 function decodeTeam() {
   
   
@@ -33,19 +45,16 @@ function decodeTeam() {
 function showTeamInputBox() {
 
 	//string to avoid duplicity
-	const inputBoxMessageDefault = "No dream team code detected - enter dream team code here";
+	const inputBoxMessageDefault = "Insert Dream Team code here";
 
 	//check if team is valid or not
-	if (dtValid == true) {
-	  
-	  //Edit input box message
-	  inputBoxMessageDefault = "Enter dream team code here";
+	if (state == "valid") {
 	  
 	} else {
 	  
 	  //check if dream team code is provided, update inputBoxMessage
-	  if (dtCode) {
-	    inputBoxMessageDefault = "Invalid dream team code provided - enter dream team code here";
+	  if (state = "invalid") {
+	    inputBoxMessageDefault = "Insert valid Dream Team code here";
 	  }
 	}
 }
