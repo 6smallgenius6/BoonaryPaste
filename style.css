@@ -24,7 +24,14 @@ h1 {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+#app.state-empty, #app.state-invalid {
   align-items: center;
+}
+
+#app.state-valid {
+  align-items: flex-end;
 }
 
 /* code container */
@@ -48,13 +55,11 @@ h1 {
 
 .state-empty #codeContainer,
 .state-invalid #codeContainer {
-  align-items: center;
   width: 55%;
   height: 40%;
 }
 
 .state-valid #codeContainer {
-  align-items: flex-end;
   width: 20%;
   height: 30%;
 }
