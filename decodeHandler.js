@@ -82,6 +82,10 @@ function readTeamInputBox() {
   //get input
   const input = document.getElementById("dtInput").value;
 
-  //log on console
-  console.log(input);
+  //check if input is infact provided
+  if (input) {
+    
+    //redirect to new branch
+    window.location.href = ("https://6smallgenius6.github.io/dtpaste/?dt="+input);
+  }
 }
